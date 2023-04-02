@@ -1,19 +1,22 @@
-# JPyPA - Jekyll Python Post Automation (JPyPA)
+# Jekyll Python Post Automation (JPyPA)
+
+JPyPA is a set of Python scripts designed to automate the process of creating, updating, and publishing Jekyll blog posts. It works in conjunction with the Jekyll static site generator and is tailored for the Hydeout theme, although it may work with other themes as well.
 
 Jekyll Python Post Automation (JPyPA) is a set of Python scripts that work together to automate the process of creating new blog posts in Jekyll and pushing them to GitHub Pages. The system automatically processes new Markdown files placed in the `jekyllposts` folder, generating a text-to-speech audio file, updating the post's image, and pushing the changes live to your GitHub Pages site in real-time.
 
-## Download Now
+## Features
 
-[github](https://github.com/rasteia/JPyPA)
-
-## How it works
+- Automatically processes new Markdown files placed in a designated folder
+- Generates audio using Text-to-Speech (TTS) for each post
+- Generates a new image for each post using DALL-E
+- Automatically updates front matter metadata
+- Automatically pushes updates to a GitHub Pages site
 
 JPyPA consists of the following Python scripts:
 
 1.  `newpost.py`: Monitors the `jekyllposts` folder for new Markdown files, processes them, and moves them to the Jekyll `_posts` directory.
 2.  `tts.py`: Converts the text content of a post to an audio file using text-to-speech.
 3.  `newimage.py`: Updates the post's image based on the post's title and content.
-
 
 When you save a new Markdown file in the `jekyllposts` folder, `newpost.py` detects the file and processes it in the following sequence:
 
@@ -23,6 +26,16 @@ When you save a new Markdown file in the `jekyllposts` folder, `newpost.py` dete
 4.  Calls `tts.py` to generate an audio version of the post.
 5.  Calls `newimage.py` to update the post's image.
 6.  Pushes the changes to your GitHub Pages repository, making the post live.
+
+## Download Now
+
+[github](https://github.com/rasteia/JPyPA)
+
+## Installation
+
+1. Clone or download the JPyPA repository: https://github.com/rasteia/JPyPA
+2. Install the required Python packages:
+## How it works
 
 ## Usage
 
