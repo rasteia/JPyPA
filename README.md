@@ -4,7 +4,7 @@ Jekyll Python Post Automation (JPyPA) is a set of Python scripts that work toget
 
 ## Download Now
 
-[github](https://github.com/rasteia/rasteia.github.io)
+[github](https://github.com/rasteia/JPyPA)
 
 ## How it works
 
